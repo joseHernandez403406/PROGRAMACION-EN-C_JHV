@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main (void) {
+int d,p;
+printf("Conversion de dolares a pesos mexicanos\n");
+
+printf("indica el total de dolares para la conversion\n");
+scanf("%d",&d);
+p=d*22;
+printf ("el resultado de la conversión  es: %d\n",p);
+return 0; 
+}
