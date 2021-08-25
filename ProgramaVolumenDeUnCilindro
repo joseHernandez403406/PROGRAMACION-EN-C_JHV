@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main (void) {
+	float h,r,a,V;
+	float p=3.1416;
+	printf("Volumen de un cilindro\n");
+	
+	printf("introduzca el valor de la altura\n");
+	scanf("%f",&h);
+	printf("introduzca el valor del radio:\n");
+	scanf ("%f",&r);
+	a=p*(pow(r,2));
+	V=a*h;
+	printf ("el volumen del cilindro es%f\n:",V);
+	return 0;
+	
+}
