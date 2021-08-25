@@ -1,0 +1,16 @@
+#include  <stdio.h>
+int main (void) {
+int a,b,s,r;
+
+printf ("la suma y resta de dos numeros\n");
+
+printf("indica el primer valor:\n");
+scanf("%d",&a);
+printf("indica el segundo valor:\n");
+scanf("%d",&b);
+s= a+b;
+printf("el resultado  de la suma es:%d\n",s);
+r=a-b;
+printf("el resultado de la resta es: %d\n",r);
+return 0 ;
+}
