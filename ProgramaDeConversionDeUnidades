@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(void) {
+	int a;
+	float b;
+	printf ("Conversion de metros a kilometros\n");
+	
+	printf("coloca la cantidad de metros que seran convertidos\n");
+	scanf ("%d",&a);
+	b=a*0.001;
+	printf ("el resultado de metros a kilometros es:%f\n",b);
+	return 0;
+}
