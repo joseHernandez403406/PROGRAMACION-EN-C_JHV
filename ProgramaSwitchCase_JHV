@@ -1,0 +1,52 @@
+/*ALUMNO: Jose Hernandez Vargas */
+/*GRADO Y GRUPO: 1° 3*/
+/*MATERIA: Programación en C*/
+
+#include<stdio.h>
+int main (void)
+{
+	int pesosmexicanos;
+	float res;
+	int d;
+	printf("Conversion de pesos mexicanos a 6 monedas distintas");
+	
+	printf("indica el total de pesos mexicanos  a covertir\n");
+	scanf("%d",&pesosmexicanos);
+	
+	printf("indica la conversion que quieres realizar\n 1) de pesos a dolar estadounidense \n 2) De pesos a yuan\n 3)De pesos a francos suizos\n 4)De pesos a libras egipcias \n 5)De pesos a dirhams\n 6) De pesos a real brasileño\n");
+	scanf("%d",&d);
+	
+	res=0;
+	switch(d)
+	{
+	case 1:
+	res= pesosmexicanos/20.36;
+	break;
+	
+	case 2:
+	res= pesosmexicanos/3.14;
+	break;
+	
+	case 3:
+	res=pesosmexicanos/22.16;
+	break;
+	
+	case 4:
+	res= pesosmexicanos/1.30;
+	break;
+	
+	case 5:
+	res= pesosmexicanos/5.54;
+	break;
+	
+	case 6:
+	res=pesosmexicanos/3.88;
+	break;
+	
+	default:
+	printf("opcion invalida");
+	
+	}
+	printf("La conversion de %d pesos mexicanos, en la moneda selecionada es:%1.2f",pesosmexicanos,res);
+	return 0;	
+}
