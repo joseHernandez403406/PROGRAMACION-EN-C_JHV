@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include <stdbool.h>
+
+int main (){
+	
+	float escala [13]{3.3, 4.5, 5.0, 3.4, 4.2, 5.3, 3.2, 4.3, 5.2, 7.1, 3.3, 4.8, 5.2};
+	int i=0;
+	printf("Riego segun la de escala de richter en un terremoto");
+	
+	for( i=0;i<13;i++){
+		if (escala[i]>3.5){
+			printf ("Imperceptiblr,sin problema\n");
+		}
+		
+	if ((escala[i]>3.5) && (escala[i]<5.4)){
+		printf ("sin problemas,avisar\n");
+	}
+	
+	if ((escala[i]>5.5) && (escala[i]<6)){
+		printf ("Emitir alerta, desalojar\n");
+	}
+	
+	if ((escala[i]>6) && (escala[i]<6.9)){
+		printf ("Emitir alerta, enviar equipos de apoyo\n");
+	}
+	
+	if ((escala[i]>7) && (escala[i]<7.9)){
+		printf ("Emitir alerta, enviar equipos de rescate\n");
+	}
+	
+	if (escala[i]>8){
+		printf ("Emergencia nacional, solicitar apoyo externo\n");
+	}
+			
+	}
+	return 0;
+	
+}
