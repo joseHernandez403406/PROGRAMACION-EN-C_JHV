@@ -1,0 +1,23 @@
+/*ALUMNO:Hernandez Vargas Jose 
+MATERIA: Progrmacion en C 
+CATEDRATICO: Clavel Maqued Mireya
+UAEH
+EXAMEN PRIMER PARCIAL*/
+
+# include<stdio.h>
+# include <math.h>
+
+int main (void) {
+	float L,volumen;
+	
+	printf ("Calcula el volumen de un cubo a partir de que el usuario te proporcione la medida de su lado\n");
+	
+	printf ("\nindica el valor de L:");
+	scanf ("%f",&L);
+	
+	volumen= pow (L,3);
+	printf("El volumen del cubo es: %.2f\n",volumen);
+	
+	return 0;
+	
+}
