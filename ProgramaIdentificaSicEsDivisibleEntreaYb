@@ -1,0 +1,41 @@
+/* Henrnandez Vargas Jose */
+/* GRADO Y GRUPO: PRIMERO TRES */ 
+/* UAEH */
+/* Programa Identifica Si C Es Divisible Entre A y B*/
+
+#include<stdio.h>
+ 
+ 	int divisibilidadA(int A,int C){
+ 	if (C%A==0) return 1;
+ 	else
+ 	return 0;
+	}
+	
+	 int divisibilidadB(int B,int C)
+	 {
+	 	if (C%B==0) return 1;
+	 	else
+	 	return 0;
+	 }
+	 
+	int main(void) {
+		int A=0,B=0,C=0;
+		printf("indica el valor de C:");
+		scanf("%d",&C);
+		printf("indica el valor de B:");
+		scanf("%d",&B);
+		printf("indica el valor de A:");
+		scanf("%d",&A);
+		
+	if (divisibilidadA(A,C))
+	printf("%d es divisible entre %d\n",C,A);
+	else
+	printf ("%d no es divisible entre %d\n",C,A) ;
+	
+	if (divisibilidadB(B,C))
+	printf("%d es divisble entre %d\n",C,B);
+	else
+	printf("%d no es divisibles entre %d\n",C,B);
+	
+	return 0;
+	}
