@@ -1,0 +1,101 @@
+/*Henrnandez Vargas Jose*/
+/*GRADO Y GRUPO:PRIMERO TRES*/ 
+/*UAEH*/
+/*PROGRAMA DE DECIMAL A SISTEMAS NUMERICOS*/
+
+#include<stdio.h>
+
+int main (void) {
+	int dec,bin[999],oct[999],hex[999];
+	int i=0;
+	int select;
+	
+	printf("CONVERSION DE NUMEROS DECIMALES A SISTEMAS NUMERICOS");
+	printf("\nIngresa el numero decimal a convertir:");
+	scanf("%i",&dec);
+	printf("\nSelecione al sistema al que desea convertir el numero decimal: 1)Binario 2)Octal 3)Hexadecimal ");
+	scanf("%d",&select);
+	
+	switch(select) {
+	
+	case 1:
+	while (dec != 0)
+	{
+		bin[i] =dec % 2;
+		dec= dec / 2;
+		i++;
+	}
+	
+	i--;
+	printf("Binario:");
+	
+	while (i>=0)
+	{
+		printf ("%i",bin [i]);
+		i--;
+	}
+	break;
+		
+	case 2:
+	while (dec != 0)
+	{
+		oct[i] =dec % 8;
+		dec= dec / 8;
+		i++;
+	}
+	
+	i--;
+	printf("Octal:");
+	
+	while (i>=0)
+	{
+		printf ("%i",oct [i]);
+		i--;
+	}
+	break;
+    
+    
+    case 3:
+    while (dec!=0)
+    {
+    	hex[i]=dec %16;
+    	dec=dec /16;
+    	i++;
+	}
+	i--;
+	printf("Hexadecimal:");
+	
+	while (i>=0)
+	{
+		switch(hex[i])
+		{
+		case 10:
+			printf ("A");
+		break;
+		case 11:
+			printf("B");
+		break;
+		case 12:
+			printf("C");
+		break;
+		case 13:
+			printf("D");
+		break;
+		case 14:
+			printf("E");
+		break;
+		case 15:
+			printf("F");
+		break;
+		default: 
+		printf ("i",hex[i]);
+		
+		break;
+	}
+	i--;
+	}
+	printf("\n");
+	return 0;
+}
+}
+
