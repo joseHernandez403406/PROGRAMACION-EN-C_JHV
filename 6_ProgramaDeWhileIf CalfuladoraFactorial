@@ -1,0 +1,31 @@
+/*Henrnandez Vargas Jose*/
+/*GRADO Y GRUPO:PRIMERO TRES*/ 
+/*UAEH*/
+/*PROGRAMA DE WHILE IF CALCULADORA FACTORIAL*/
+
+#include<stdio.h>
+int main (void) 
+{
+	int n;
+	int f=1;
+	int salir;
+	
+	while (salir=1) {
+		printf("\nindica el valor para la calculadora factorial:");
+		scanf("%d" , &n);
+		f=1;
+	while (n>1){
+	    f=f*n;
+	    n--; 
+	   
+	}
+	    printf ("\nvalor del factorial es: %d",f);
+	    
+		printf("\n¿Desea hacer el calculo otra vez? 1(si)/2(no)");
+		scanf("%d",&salir);
+	}
+	printf("Gracias por utilizar la calculadora de factoriales");
+	return 0;
+	
+}
+  
