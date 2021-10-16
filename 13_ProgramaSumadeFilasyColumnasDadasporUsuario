@@ -1,0 +1,45 @@
+/*			TAREA				*/
+/*ALUMNO: Jose Herndez Vargas 
+GRADO Y GRUPO: 1° 3
+Programa suma de filas y columnas dadas por el usuario*/
+
+#include <stdio.h>
+#include <conio.h>
+
+int main(){
+	int a, b;
+	int matriz[a][b], i, j, vector[a], vector2[b];
+	
+	printf("Indica una dimension de la columna de la matriz\n");
+	scanf("%d", &a);
+	printf("Indica una dimension de la fila de la  matriz\n");
+	scanf("%d", &b);
+	
+	for (i=1; i<=a; i++)
+		for(j=1; j<=b; j++)
+		{
+		printf("Indica el valor de la posicion %d, %d:  ", i, j);
+		scanf(" %d", &matriz[i][j]);
+		vector[i]=vector[i]+matriz[i][j];
+		vector2[j]=vector2[j]+matriz[i][j];
+		}
+		printf("Los valores obtenidos son: \n\n");
+		for(i=1; i<=a; i++){
+			printf("\n");
+			for(j=1; j<=b; j++)
+			{
+			printf("%d\t", matriz[i][j]);	
+			}
+		printf("\n");
+		}
+		printf("\n La suma de las filas es: \n");
+		for(i=1; i<=a; i++){
+		printf(" %d \n", vector[i]);	
+		}
+		printf("\n La suma de las columnas es: \n");
+		for(j=1; j<=b; j++){
+		printf(" %d \t", vector2[j]);	
+		}
+	getch();
+	return 0;		
+}
