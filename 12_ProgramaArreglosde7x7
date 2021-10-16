@@ -1,0 +1,33 @@
+/*			TAREA				*/
+/*ALUMNO: Jose Herndez Vargas 
+GRADO Y GRUPO: 1° 3
+Programa de arreglos bidimensionales5 DE 7X7 */
+
+#include<stdio.h>
+void displayNumbers (int num [7][7]);
+int main(){
+int num [7][7];
+printf("Ingresa 49 valores enteros\n");
+for (int i=0; i<7; ++i)
+{
+	for (int j=0; j<7; ++j)
+	{
+		scanf("%d",&num[i][j]);
+	}
+}
+displayNumbers (num);
+return 0;
+}
+
+void displayNumbers(int num [7][7]){
+	printf("Los datos de la diagonal principal es: \n");
+	for(int i=0; i<7;++i)
+	{
+		for(int j=0; j<7;++j)
+		{
+			if (i==j){
+				printf("%d\n",num[i][j]);
+			}
+		}
+	}
+}
