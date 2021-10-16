@@ -1,0 +1,36 @@
+/*			TAREA				*/
+/*ALUMNO: Jose Herndez Vargas 
+GRADO Y GRUPO: 1° 3
+Programa de arreglos bidimensionales4 DE 5X5 */
+
+
+#include <stdio.h> 
+void displayNumbers(int num [5][5]);
+int main(){
+int num [5][5];
+printf("Ingresa 25 numeros enteros \n");
+for (int i=0;i<5;++i)
+{
+	for(int j=0;j<5;++j)
+	{
+		scanf("%d",&num[i][j]);
+	}
+}
+	displayNumbers(num);
+	return 0;
+}
+
+void displayNumbers(int num[5][5]){
+printf("Los datos de la diagonal principal son:\n");
+for (int i=0;i<5;++i)
+{
+	for(int j=0;j<5;++j)
+	{
+		if (i==j){
+		printf("%d\n",num[i][j]);
+		}
+	}
+}
+}
+
+
