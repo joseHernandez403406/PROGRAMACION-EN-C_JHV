@@ -1,0 +1,41 @@
+/*			TAREA				*/
+/*ALUMNO: Jose Herndez Vargas 
+GRADO Y GRUPO: 1° 3
+Programa de matrices,calificaciones y promedio de 20 estudiantes*/
+
+#include <stdio.h>
+#include <conio.h>
+
+int main(){
+	int reprobados=0 ;
+	float prommat, promedio[20]={0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+	int calificaciones[20][5], i, j, materia[20]={0, 0, 0, 0, 0,0, 0, 0, 0, 0,0, 0, 0, 0, 0,0, 0, 0, 0, 0,}, alumno[20]={0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+	
+	for (i=1; i<=20; i++){
+		printf("Calificacion del alumno %d :\n", i);
+		for(j=1; j<=5; j++){
+			printf("En la materia %d:  ", j);
+			scanf("%d", &calificaciones[i][j]);
+			
+			alumno[i]=alumno[i]+calificaciones[i][j];
+			materia[j]=materia[j]+calificaciones[i][j];
+		}
+		printf("El promedio de las calificaciones del alumno %d es: ", i);
+		promedio[i]=alumno[i]/5;
+		printf("\t %.2f \n\n", promedio[i]);
+		
+		if (7>promedio[i]){
+			reprobados++;
+			}
+	}
+		
+		for(j=1; j<=5; j++){
+			prommat=materia[j]/20;
+			printf("El promedio de la materia %d es : %f\n", j, prommat);
+		}
+		
+		printf("\n\nEn este grupo hay %d reprobados", reprobados);
+		
+		getch();
+		return 0;
+	}
