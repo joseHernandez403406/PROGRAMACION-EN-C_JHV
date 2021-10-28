@@ -1,0 +1,56 @@
+/*Henrnandez Vargas Jose*/
+/*GRADO Y GRUPO:PRIMERO TRES*/ 
+/*UAEH*/
+/*PROGRAMA DE ROMBO*/
+
+#include <stdio.h>
+void imprime5(int);
+void imprime6(int);
+int main(){
+int n=0;           
+printf("Indica el numero limite: ");  
+scanf("%d", &n);
+imprime5(n);
+imprime6(n);
+return 0;
+}
+
+void imprime5(int g){
+int a,c,h,i,j;
+
+for(h=1; h<=g; h++){
+for(i=g; i>h; i--){
+printf("\t");
+}
+for(j=h; j>0; j--){
+printf("%d\t",j);
+if (j<=1){
+for(a=h; a<=h; a++){
+for(c=2; c<=a; c++){
+printf("%d\t",c);
+}
+}
+}
+}
+printf("\n");
+}
+}
+
+void imprime6(int k){
+int m,n,o,e,f;
+for(m=k-1; m>=1; m--){
+for(n=k-1; n>=m; n--){
+printf("\t");
+}
+for(o=m; o>0; o--){
+printf("%d\t",o);
+}
+if(o<=1){
+for(e=m; e>=m; e--){
+for(f=1; f<e; f++)
+printf("%d\t", f+1);
+}
+}
+printf("\n");
+}
+}
