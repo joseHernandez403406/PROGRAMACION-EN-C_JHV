@@ -1,0 +1,15 @@
+/*Henrnandez Vargas Jose*/
+/*GRADO Y GRUPO:PRIMERO TRES*/ 
+/*UAEH*/
+/*PROGRAMA DE lA PAGINA 127*/
+
+#include <stdio.h>
+// eco de los argumentos de la línea de órdenes; la versión
+main(int argv, char* argv[])
+{
+int i;
+for (i=1; i<argv; i++)
+printf("%s%s", argv[i], (i<argv-1)? "": "");
+printf("\n");
+return 0;
+}
