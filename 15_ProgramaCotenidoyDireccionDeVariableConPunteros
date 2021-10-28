@@ -1,0 +1,17 @@
+/*Henrnandez Vargas Jose*/
+/*GRADO Y GRUPO:PRIMERO TRES*/ 
+/*UAEH*/
+/*PROGRAMA DE CONTENIDO Y DIRECION CON UNA VARIABLE*/
+
+#include <stdio.h>
+void jugar(int* n){
+int y=*n;
+y=(y+2)/2+2-(3*y);
+*n=y;
+}
+int main(){
+int x=10;
+jugar(&x);
+printf("%d\n", x);
+return 0;
+}
