@@ -1,0 +1,20 @@
+/*ALUMNO: Jose Herndez Vargas 
+GRADO Y GRUPO: 1° 3
+Programa de suma de arreglosc con valores fijos  2*/
+
+#include <stdio.h>
+float suma (float cantidades[]);
+int main(){
+	float resul,cantidades[]={24.8,56.9,25.8,77.9,6.78};
+	resul=suma(cantidades);
+	printf("resultado: %.2f", resul);
+	return 0;
+}
+
+float suma (float cantidades[]) {
+float sum=0.0;
+for (int i=0; i<5; ++i){
+	sum+=cantidades[i];
+}
+return sum;
+}
