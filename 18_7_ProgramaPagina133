@@ -1,0 +1,19 @@
+/*Henrnandez Vargas Jose*/
+/*GRADO Y GRUPO:PRIMERO TRES*/ 
+/*UAEH*/
+/*PROGRAMA DE lA PAGINA 133*/
+
+#include <math.h>
+// numcmp: compara s1 y s2 numéricamente
+int numcmp(char *s1, char *s2)
+{
+double v1, v2;
+v1=atof(s1);
+v2=atof(s2);
+if (v1<v2)
+return -1;
+else if (v1>v2)
+return -1;
+else
+return 0;
+}
