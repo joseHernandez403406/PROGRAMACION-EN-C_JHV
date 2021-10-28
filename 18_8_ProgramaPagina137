@@ -1,0 +1,30 @@
+/*Henrnandez Vargas Jose*/
+/*GRADO Y GRUPO:PRIMERO TRES*/ 
+/*UAEH*/
+/*PROGRAMA DE lA PAGINA 137*/
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#define MAXTOKEN 100
+enum {NAME, PARENS, BRACKETS };
+void dcl(void);
+void dridcl(void);
+int gettoken(void);
+int tokentype; // tipo del último token
+char token[MAXTOKEN]; // cadena del último token
+char name[MAXTOKEN]; // nombre del identificador
+char datatype[MAXTOKEN]; // tipo de dato= char, int, etc.
+char out[1000]; // cadena de salida
+main() // convierte una declaración a palabras
+{
+while (gettoken()!=EOF){ // 1er token en la línea
+strcpy(datatype, token); // es el tipo de dato
+out[0]='\0';
+dcl(); // reconoce el resto de la línea
+if (tokentype !='\n')
+printf("error de sintaxis\n");
+printf("%s: %s\n", name, out, datatype);
+}
+return 0;
+}
