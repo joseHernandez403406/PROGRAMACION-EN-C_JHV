@@ -1,0 +1,29 @@
+/*Henrnandez Vargas Jose*/
+/*GRADO Y GRUPO:PRIMERO TRES*/ 
+/*UAEH*/
+/*PROGRAMA DE lA PAGINA 107*/
+
+#include <ctype.h>
+#include <stdio.h>
+int getch(void);
+void ungetch(int);
+// getint: obtiene el siguiente entero de la entrada y lo asigna a *pn
+int getint(int *pn)
+{
+int c, sign;
+char EOF;
+while (isspace(c=getch())); //ignora los espacios en blanco
+if (!isdigit(c) && c!=EOF && c!='+' && c!='-'){
+ungetch(c); // no es un número
+return 0;
+}
+sign=(c=='-')?-1:1;
+if (c =='+'||c=='-')
+c=getch();
+for (*pn=0; isdigit(c); c=getch())
+*pn=10 * *pn +(c-'0');
+*pn *=sign;
+if (c!=EOF)
+ungetch(c);
+return c;
+}
