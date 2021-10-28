@@ -1,0 +1,20 @@
+/*Henrnandez Vargas Jose*/
+/*GRADO Y GRUPO:PRIMERO TRES*/ 
+/*UAEH*/
+/*PROGRAMA DE INTERCAMBIO DE VALORES DE DOS VARIABLES*/
+
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+void intercambia (int *x, int *y){
+int z;
+z=*x;
+*x=*y;
+*y=z;
+}
+int main(void){
+int a=15, b=9;
+printf("a=%d b=%d\n", a, b);
+intercambia(&a, &b);
+printf("a=%d b=%d\n", a, b);
+}
