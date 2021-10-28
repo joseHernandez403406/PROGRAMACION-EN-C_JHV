@@ -1,0 +1,28 @@
+/*Henrnandez Vargas Jose*/
+/*GRADO Y GRUPO:PRIMERO TRES*/ 
+/*UAEH*/
+/*SEGUNDO PARCIAL EXAMEN PROGRAMA 2 */
+
+#include <stdio.h>
+void table (float *p, int n);
+int main (void){
+int i;
+float a[5]={0,0,0,0,0};
+for (i =0; i<5; i++){
+	printf("volor posicional %d:", i+ 1);
+	scanf("%f",&a[i]);
+}
+printf("\nCl\t");
+printf("C2\t");
+printf("C3\n");
+table(a,5);
+return 0;
+}
+void table(float *p, int n){
+	int i;
+	for (i=0; i<5; i++){
+	printf("a\t");
+    printf("%.2f\t",p[i]);
+    printf("%p\n",&p[i]); 	
+	}
+	}
