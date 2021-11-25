@@ -1,0 +1,45 @@
+//Henrnandez Vargas Jose
+//GRUPO:PRIMERO TRES
+//UAEH
+//EXAMEN GLOBAL
+//Fecha:25-11-2021
+
+#include <stdio.h>
+
+int main(){
+
+int M, N, j, i;
+
+printf("Coloque el número de filas de la matriz: ");
+scanf("%d", &M);
+printf("Coloque el numero de columnas de la matriz: ");
+scanf("%d", &N);
+
+if(M<=50 && N<=50){
+    int mat[M][N];
+    printf("Coloque los valores de la matriz: ");
+    for (i=0; i<M; i++){
+        for (j=0; j<N; j++)
+        scanf("%d", &mat[i][j]);
+        }
+        printf("La matriz quedara como: \n\n");
+        for (i=0; i<M; i++){
+            for (j=0; j<N; j++){
+            printf("%d  ", mat[i][j]);
+            }
+            printf("\n");
+        }
+        printf("La traspuesta queda de la siguiente manera: \n\n");
+        for (i=0; i<N; i++){
+            for (j=0; j<M; j++){
+            printf("%d  ", mat[j][i]);
+            }
+            printf("\n");
+        }
+	}
+	else{
+        printf("Error, las filas o las columnas exceden 50 caracteres");
+	}
+
+	return 0;
+}
