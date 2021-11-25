@@ -1,0 +1,22 @@
+//Henrnandez Vargas Jose
+//GRUPO:PRIMERO TRES
+//UAEH
+//Programa de analizado 7
+//Fecha:10-11-2021-Tarea
+
+#include <stdio.h>
+main()
+{
+int x=3, y;
+float z;
+y=x+3;
+printf ("%d\n", y);
+y=3*x*x + 2*x + 1;
+printf ("%d\n", y);
+z=x*0.3;
+printf ("%f\n", z);
+z=y/x;
+printf ("%f\n", z);
+z=(float) y/x;
+printf ("%f\n", z);
+}
